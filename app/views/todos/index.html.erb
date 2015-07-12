@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
 
+<%= link_to 'New Todo', new_todo_path, class: 'button success radius small' %>
+
+
 <h1>Listing Todos</h1>
 
 <table>
@@ -16,9 +19,9 @@
       <tr>
         <td><%= todo.title %></td>
         <td><%= todo.notes %></td>
-        <td><%= link_to 'Show', todo %></td>
-        <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
-        <td><%= link_to 'Destroy', todo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', todo, class: 'button tiny radius' %></td>
+        <td><%= link_to 'Edit', edit_todo_path(todo), class: 'button tiny radius' %></td>
+        <td><%= link_to 'Destroy', todo, method: :delete, data: { confirm: 'Are you sure?' }, class: 'button tiny radius' %></td>
       </tr>
     <% end %>
   </tbody>

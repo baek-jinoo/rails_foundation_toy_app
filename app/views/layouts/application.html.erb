@@ -14,7 +14,15 @@
 
   <body>
 
-    <%= yield %>
+    <%= render 'shared/navigation' %>
 
+    <div class="row">
+      <div class="small-3 column">
+        <h3>Tealeaf Academy Todo</h3>
+      </div>
+      <div class="small-9 column">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
